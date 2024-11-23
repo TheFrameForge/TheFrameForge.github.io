@@ -12,7 +12,7 @@
 /* Body */
 body {
     font-family: IBM;
-    background-color: #c5f6ff; /* Soft light green background */
+    background-color: #0c171f; /* Soft light green background */
     color: #283444; /* Darker text color for better readability */
     line-height: 1.6;
     padding: -1;
@@ -20,7 +20,7 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #6cb1ab4d; /* Soft background */
+    background-color: #0c171f00; /* Soft background */
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -139,7 +139,7 @@ body {
     margin-bottom: 25px;
     font-weight: 800;
     color: #505050;
-    background-color: #2d5372;
+    background-color: #2d53726c;
     color: #ffffff;
     padding: 20px 30px;
     border-radius: 500px;
@@ -179,16 +179,16 @@ body {
 /* About Section */
 #about {
     padding: 50px 100px;
-    background-color: #a7f0fa; /* White background for clean section */
+    background-color: #0c171f; /* White background for clean section */
     text-align: center;
-    color: #333; /* Dark text */
+    color: #c9c9c9; /* Dark text */
     animation: fadeIn 1.5s ease-out;
 }
 
 #about h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #333; /* Dark title for contrast */
+    color: #e6e6e6; /* Dark title for contrast */
 }
 
 #about p {
@@ -200,7 +200,7 @@ body {
 /* Services Section */
 #services {
     padding: 50px 100px;
-    background-color: #a7f0fa; /* Light gray background for contrast */
+    background-color: #253847; /* Light gray background for contrast */
     text-align: center;
     animation: fadeIn 1.5s ease-out;
 }
@@ -208,7 +208,7 @@ body {
 #services h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
-    color: #333; /* Dark header for visibility */
+    color: #ffffff; /* Dark header for visibility */
 }
 
 .services-list {
@@ -219,7 +219,7 @@ body {
 }
 
 .service {
-    background-color: #7dcce08c;
+    background-color: #1a2e338c;
     padding: 30px;
     border-radius: 100px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -232,18 +232,20 @@ body {
 .service h3 {
     font-size: 1.8em;
     margin-bottom: 10px;
-    color: #333; /* Dark text for service titles */
+    color: #ffffff62; /* Dark text for service titles */
 }
 
 .service p {
     font-size: 1.1em;
     margin-bottom: 20px;
-    color: #666; /* Lighter text for descriptions */
+    color: #ffffff; /* Lighter text for descriptions */
 }
 
 .service:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 0 30px rgb(152, 168, 243); /* Increased red glow */
+    color: #b4d6ff;
 }
 
 /* CashApp Title */
@@ -251,7 +253,7 @@ body {
     font-size: 1.4em;
     margin-top: 50px;
     text-align: center;
-    color: #333; /* Dark text */
+    color: #ffffff; /* Dark text */
 }
 
 .cashapp-link {
@@ -289,7 +291,7 @@ form {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background-color: rgba(166, 187, 245, 0.459); /* White form background for contrast */
+    background-color: #2d5372; /* White form background for contrast */
     border-radius: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
@@ -299,8 +301,9 @@ form label {
     display: block;
     margin-bottom: 10px;
     font-size: 1.2em;
-    color: #505050; /* Dark text for form labels */
+    color: #f0f0f0; /* Dark text for form labels */
 }
+
 
 form input,
 form textarea {
@@ -310,8 +313,9 @@ form textarea {
     border: 0px solid #ddd;
     border-radius: 15px;
     font-size: 1.1em;
-    background-color: #abd2fa;
-    color: rgb(88, 88, 88)
+    background-color: #364555;
+    color: rgb(231, 231, 231);
+    resize: none; /* Prevents resizing */
 }
 
 form button {
