@@ -87,13 +87,8 @@ p {
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
     padding: 80px 10%;
-<<<<<<< HEAD
-    background: url('moreimg/timeluine_1.2.2.jpg') no-repeat center center;
+    background: url('moreimg/forgefram_1.2.1.jpg') no-repeat center center;
     background-size: cover;
-=======
-    background: rgb(58,58,58);
-    background: linear-gradient(90deg, rgba(58,58,58,1) 0%, rgba(197,255,255,1) 100%);
->>>>>>> e3d1ebd9621924f5248b99cbf5ac45d4a26c6497
     color: white;
     height: 80vh;
     position: relative;

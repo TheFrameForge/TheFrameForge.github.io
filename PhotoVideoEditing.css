@@ -13,7 +13,7 @@
 }
 
 body {
-    background-color: #c5ffff;
+    background-color: #000000;
     color: #333;
 }
 
@@ -34,12 +34,24 @@ p {
 
 /* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #c5ffff;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between logo and nav links */
+    padding: 10px; /* Add some padding */
+}
+
+.logo-link {
+    display: inline-block; /* Make the link behave like an inline block */
+}
+
+.logo {
+    width: 95%;
+    max-width: 250px;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Enlarge the logo on hover */
 }
 
 .navbar .logo {
@@ -50,15 +62,19 @@ p {
 .nav-links {
     list-style: none;
     display: flex;
+    font-family: IBM;
 }
 
 .nav-links li {
     margin-left: 20px;
+    font-family: IBM;
 }
 
 .nav-links li a {
     font-size: 1.2em;
-    color: #333;
+    color: #9eb6e9;
+    transition: color 0.7 ease;
+    font-family: IBM;
 }
 
 .nav-links li a:hover {
@@ -71,8 +87,8 @@ p {
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
     padding: 80px 10%;
-    background: rgb(58,58,58);
-    background: linear-gradient(90deg, rgba(58,58,58,1) 0%, rgba(197,255,255,1) 100%);
+    background: url('moreimg/forgefram_1.2.1.jpg') no-repeat center center;
+    background-size: cover;
     color: white;
     height: 80vh;
     position: relative;
@@ -95,39 +111,45 @@ p {
 
 .hero .btn {
     padding: 10px 20px;
-    background-color: #c5ffff;
-    color: rgb(53, 53, 53);
+    background-color: #c5ffff00;
+    color: rgb(240, 240, 240);
     font-size: 1.2em;
-    border-radius: 5px;
+    border-radius: 115px;
     transition: background-color 0.3s, border-radius 0.6s ease;
     display: inline-block;
+    backdrop-filter: blur(15px);
+    font-family: IBM;
 }
 
 .hero .btn:hover {
-    background-color: #ffffff;
+    background-color: #3eceb671;
     border-radius: 15px;
+    backdrop-filter: blur(15px);
 }
 
 /* About Section */
 .about {
     padding: 60px 10%;
-    background-color: #c5ffff;
+    background-color: #00000000;
+    color: #c9c9c9;
 }
 
 .about h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 
 /* Services Section */
 .services {
     padding: 60px 10%;
-    background-color: #c5ffff;
+    background-color: #c5ffff00;
 }
 
 .services h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 
 .services-list {
@@ -137,15 +159,18 @@ p {
 }
 
 .service {
-    background-color: #c5ffff;
+    background-color: #525396;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 35px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 0 30px rgba(31, 45, 245, 0.7); /* Increased red glow */
     transition: transform 0.3s ease;
+    color: #979797;
+    color: #ffffff;
 }
 
 .service:hover {
     transform: translateY(-10px);
+    border-radius: 35px;
 }
 
 .service h3 {
@@ -159,26 +184,35 @@ p {
 
 /* Order Section */
 .order-section {
-    padding: 40px 10%;
-    background-color: #98f7f7;
+    padding: 40px 5%;
+    background-color: #ffffff41;
     text-align: center;
-}
+    border-radius: 15px;}
 
 .order-section h2 {
     font-size: 2.5em;
+    color: #d4d4d4;
 }
 
 .order-section .btn {
     padding: 12px 24px;
-    background-color: #3a3a3a;
-    color: rgb(173, 230, 245);
+    background-color: #000000;
+    color: rgb(61, 78, 133);
     font-size: 1.5em;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, border-radius 0.3s;
+    text-align: center;
+}
+
+.order-section p {
+    color: #bbbbbb;
+    font-family: IBM;
 }
 
 .order-section .btn:hover {
     background-color: #585757;
+    border-radius: 35px;
+    color: #ffffff;
 }
 
 /* Contact Form */
@@ -186,7 +220,7 @@ form {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background-color: rgba(166, 187, 245, 0.459); /* White form background for contrast */
+    background-color: rgba(77, 77, 77, 0.459); /* White form background for contrast */
     border-radius: 30px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
@@ -207,14 +241,14 @@ form textarea {
     border: 0px solid #ddd;
     border-radius: 15px;
     font-size: 1.1em;
-    background-color: #abd2fa;
-    color: rgb(88, 88, 88)
+    background-color: #4e4e4e;
+    color: rgb(255, 255, 255)
 }
 
 form button {
     width: 100%;
     padding: 15px;
-    background-color: #859cb6; /* Strong blue button for contrast */
+    background-color: #3c528f; /* Strong blue button for contrast */
     color: #464646; /* White text */
     border: none;
     border-radius: 15px;
@@ -224,9 +258,10 @@ form button {
 }
 
 form button:hover {
-    background-color: #333a41; /* Darker blue on hover */
-    color: #ddd;
+    background-color: #ffffff; /* Darker blue on hover */
+    color: #000000;
     transform: translateY(-10px);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1), 0 0 30px rgba(255, 255, 255, 0.7); /* Increased red glow */
 }
 
 /* Responsive Design */
