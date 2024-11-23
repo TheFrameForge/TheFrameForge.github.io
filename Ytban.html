@@ -13,9 +13,21 @@
         <ul class="nav-links">
             <li><a href="Home.html#about">About Us</a></li>
             <li><a href="Home.html#services">Services</a></li>
-            <li><a href="Home.html#order">How to Order</a></li>
+            <li><a href="#order" class="scroll-to-bottom">How to Order</a></li>
+
         </ul>
     </nav>
+
+    <script>
+        document.querySelector('.scroll-to-bottom').addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent the default link behavior
+            const bottom = document.body.scrollHeight; // Calculate the bottom of the page
+            window.scrollTo({
+                top: bottom,
+                behavior: 'smooth' // Enables smooth scrolling
+            });
+        });
+    </script>
     
 
     <!-- Hero Section -->
@@ -57,11 +69,11 @@
     </section>
 
     <!-- Order Section -->
-    <section id="order" class="order-section animate-fade">
-        <h2>Order Your YouTube Banner</h2>
-        <p>Ready to elevate your YouTube channel? Click below to order your custom YouTube banner for just $8.</p>
-        <a href="https://cash.app/$Akshaysaip" class="btn animate-hover">Pay $8 via Cash App</a>
-    </section>
+<section id="order" class="order-section animate-fade">
+    <h2>Order Your YouTube banner</h2>
+    <p>Ready to elevate your YouTube channel? Click below to order your custom YouTube banner for just $8.</p>
+    <a href="https://cash.app/$Akshaysaip" class="btn animate-hover" target="_blank">Pay $8 via Cash App</a>
+</section>
 
     <!-- Contact Form -->
     <form action="https://submit-form.com/KEcFasyY0">
