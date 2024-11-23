@@ -33,6 +33,29 @@ body {
     font-family: product sans;
 }
 
+.logo-link {
+    display: inline-block; /* Make the link behave like an inline block */
+}
+
+.logo {
+    width: 95%;
+    max-width: 250px;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Enlarge the logo on hover */
+}
+
+.nav-links {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Display links in a row */
+}
+
+.nav-links li {
+    margin-left: 20px; /* Add space between links */
+}
+
 .navbar .logo {
     color: #333; /* Dark text for contrast */
     font-size: 1.8em;
@@ -45,9 +68,6 @@ body {
     display: flex;
 }
 
-.navbar .nav-links li {
-    margin-left: 20px;
-}
 
 .navbar .nav-links a {
     color: #565656; /* White links for contrast */
