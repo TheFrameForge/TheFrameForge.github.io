@@ -178,6 +178,23 @@ body {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
+/* CashApp Title */
+.order-section h3 {
+    font-size: 1.4em;
+    margin-top: 50px;
+    text-align: center;
+    color: #333;
+}
+
+.cashapp-link {
+    color: #ff7b00;
+    text-decoration: none;
+}
+
+.cashapp-link:hover {
+    text-decoration: underline;
+}
+
 /* Animation Effects */
 @keyframes fadeIn {
     0% {
@@ -263,5 +280,9 @@ form button:hover {
 
     form {
         padding: 15px;
+    }
+
+    .order-section h3 {
+        font-size: 1.2em;
     }
 }
