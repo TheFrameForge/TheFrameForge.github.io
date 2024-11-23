@@ -68,14 +68,15 @@ p {
 /* Hero Section */
 .hero {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
     padding: 80px 10%;
     background: url('fresh-autumn-leaves-reveal-vibrant-organic-pattern-generated-by-ai.jpg') no-repeat center center;
     background-size: cover;
     color: white;
     height: 80vh;
     position: relative;
+    text-align: center; /* Center text */
 }
 
 .hero-content {
@@ -98,11 +99,13 @@ p {
     color: rgb(53, 53, 53);
     font-size: 1.2em;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, border-radius 0.6s ease;
+    display: inline-block;
 }
 
 .hero .btn:hover {
     background-color: #ffffff;
+    border-radius: 15px;
 }
 
 /* About Section */
