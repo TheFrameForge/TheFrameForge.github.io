@@ -71,8 +71,8 @@ p {
     align-items: center; /* Center vertically */
     justify-content: center; /* Center horizontally */
     padding: 80px 10%;
-    background: url('fresh-autumn-leaves-reveal-vibrant-organic-pattern-generated-by-ai.jpg') no-repeat center center;
-    background-size: cover;
+    background: rgb(58,58,58);
+    background: linear-gradient(90deg, rgba(58,58,58,1) 0%, rgba(197,255,255,1) 100%);
     color: white;
     height: 80vh;
     position: relative;
