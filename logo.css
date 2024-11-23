@@ -68,16 +68,31 @@ p {
 /* Hero Section */
 .hero {
     display: flex;
-    align-items: center; /* Center vertically */
-    justify-content: center; /* Center horizontally */
+    align-items: center;
+    justify-content: space-between;
     padding: 80px 10%;
-    background: rgb(58,58,58);
-    background: linear-gradient(90deg, rgba(58,58,58,1) 0%, rgba(197,255,255,1) 100%);
+    background: PUT HERE;
     color: white;
     height: 80vh;
     position: relative;
-    text-align: center; /* Center text */
 }
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-image {
+    max-width: 50%; /* This limits the image's width to half the screen */
+    display: flex;
+    justify-content: flex-end; /* Aligns the image to the right */
+}
+
+.hero-img {
+    width: 100%; /* Ensure the image takes up all available space */
+    height: auto;
+    object-fit: contain; /* Ensure the image maintains aspect ratio */
+}
+
 
 .hero-content {
     max-width: 50%;
@@ -99,13 +114,11 @@ p {
     color: rgb(53, 53, 53);
     font-size: 1.2em;
     border-radius: 5px;
-    transition: background-color 0.3s, border-radius 0.6s ease;
-    display: inline-block;
+    transition: background-color 0.3s;
 }
 
 .hero .btn:hover {
     background-color: #ffffff;
-    border-radius: 15px;
 }
 
 /* About Section */
