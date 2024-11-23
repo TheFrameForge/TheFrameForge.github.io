@@ -339,4 +339,8 @@ form button:hover {
     .order-section h3 {
         font-size: 1.2em;
     }
+
+    .nav-links {
+        visibility: hidden;
+    }
 }
